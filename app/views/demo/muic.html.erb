@@ -1,0 +1,43 @@
+<h1>Demo#muic</h1>
+<p>M U I C</p>
+
+ID is <%= params[:id] %> <br />
+Major id is <%= @mid %>
+
+<br /><hr />
+
+<%= params.inspect %>
+<hr />
+<% @array.each do |i| %>
+	<%= "i is #{i}" %> <br />
+<% end %>
+
+<br />
+
+<%= link_to( "INDEX one", "/demo/index") %> <br />
+<%= link_to( "INDEX two", {:controller => "demo", :action => "index"}) %> <br />
+<%= link_to( "INDEX three", {:action => "index"}) %> <br />
+<%= link_to( "USSR one", {:action => "comsci"}) %> <br />
+
+<br />
+
+<%= link_to('Go to MUIC page', {:action => "muic", :id => 3, :major => 5}) %>
+
+
+
+<%
+=begin
+<% 1+1 %>
+<%= 2+2 %>
+<br />
+
+<% name = 'Peter' %>
+<%= "hi, #{name}" %>
+
+AAA
+<% 5.times do %>
+	<br />
+<% end %>
+BBB
+
+=end %>

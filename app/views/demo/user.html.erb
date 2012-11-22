@@ -1,0 +1,21 @@
+<h1>Demo#user</h1>
+<p>U S S R</p>
+
+The user's full name is: <%= @u + ' ' + @l %> <br />
+The user's email is: <%= @e %> <br />
+
+<br /><hr />
+
+<%= params.inspect %>
+<hr />
+
+<br />
+
+<%= link_to( "INDEX one", "/demo/index") %> <br />
+<%= link_to( "INDEX two", {:controller => "demo", :action => "index"}) %> <br />
+<%= link_to( "INDEX three", {:action => "index"}) %> <br />
+<%= link_to( "USSR one", {:action => "comsci"}) %> <br />
+
+<br />
+
+<%= link_to('Go to MUIC page', {:action => "muic", :id => 3, :major => 5}) %>

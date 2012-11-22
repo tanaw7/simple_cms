@@ -1,0 +1,8 @@
+<h1>Demo#index</h1>
+<p>Find me in app/views/demo/index.html.erb</p>
+<p>This is my own sentence YEAH!!</p>
+
+<%= link_to("Go to MUIC page (same as below)", {:controller => "demo", :action => "muic", :id => 3, :major => 5}) %> <br />
+<%= link_to('Go to MUIC page without controller specified', {:action => "muic", :id => 3, :major => 5}) %> <br /><br />
+
+<%= link_to('Go to USER page', {:action => "user", :id => 1, :last_name => "Fubar"}) %>
